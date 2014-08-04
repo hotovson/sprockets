@@ -18,7 +18,7 @@ module Sprockets
       @trail = Hike::Trail.new(root)
 
       self.logger = Logger.new($stderr)
-      self.logger.level = Logger::FATAL
+      self.logger.level = Logger::DEBUG
 
       if respond_to?(:default_external_encoding)
         self.default_external_encoding = Encoding::UTF_8
